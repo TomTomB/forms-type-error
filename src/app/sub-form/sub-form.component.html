@@ -1,0 +1,7 @@
+<ng-container *ngIf="form.get('bar') as innerForm" [formGroup]="innerForm">
+  <input type="text" formControlName="baz" />
+</ng-container>
+
+<ng-container *ngIf="form.controls['bar'] as innerForm" [formGroup]="innerForm">
+  <input type="text" formControlName="baz2" />
+</ng-container>
